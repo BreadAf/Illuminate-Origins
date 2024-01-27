@@ -1,0 +1,137 @@
+{
+  "name": "Scythe",
+  "description": "Hoes now double as scythes",
+  "type": "origins:multiple",
+  "wooden":
+  {
+    "type": "origins:modify_damage_dealt",
+    "modifier":
+    {
+      "operation": "addition",
+      "value": 5.5
+    },
+    "condition":
+    {
+      "type": "origins:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition":
+      {
+        "type": "origins:ingredient",
+        "ingredient":
+        {
+            "item": "minecraft:wooden_hoe"
+        }
+      }
+    }
+  },
+  "golden":
+  {
+    "type": "origins:modify_damage_dealt",
+    "modifier":
+    {
+      "operation": "addition",
+      "value": 5.6
+    },
+    "condition":
+    {
+      "type": "origins:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition":
+      {
+        "type": "origins:ingredient",
+        "ingredient":
+        {
+            "item": "minecraft:golden_hoe"
+        }
+      }
+    }
+  },
+  "stone":
+  {
+    "type": "origins:modify_damage_dealt",
+    "modifier":
+    {
+      "operation": "addition",
+      "value": 3.3
+    },
+    "condition":
+    {
+      "type": "origins:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition":
+      {
+        "type": "origins:ingredient",
+        "ingredient":
+        {
+            "item": "minecraft:stone_hoe"
+        }
+      }
+    }
+  },
+  "iron":
+  {
+    "type": "origins:modify_damage_dealt",
+    "modifier":
+    {
+      "operation": "addition",
+      "value": 2.6
+    },
+    "condition":
+    {
+      "type": "origins:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition":
+      {
+        "type": "origins:ingredient",
+        "ingredient":
+        {
+            "item": "minecraft:iron_hoe"
+        }
+      }
+    }
+  },
+  "diamond":
+  {
+    "type": "origins:modify_damage_dealt",
+    "modifier":
+    {
+      "operation": "addition",
+      "value": 2.3
+    },
+    "condition":
+    {
+      "type": "origins:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition":
+      {
+        "type": "origins:ingredient",
+        "ingredient":
+        {
+            "item": "minecraft:diamond_hoe"
+        }
+      }
+    }
+  },
+  "netherite":
+  {
+    "type": "origins:modify_damage_dealt",
+    "modifier":
+    {
+      "operation": "addition",
+      "value": 2.8
+    },
+    "condition":
+    {
+      "type": "origins:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition":
+      {
+        "type": "origins:ingredient",
+        "ingredient":
+        {
+            "item": "minecraft:netherite_hoe"
+        }
+      }
+    }
+  }
+}

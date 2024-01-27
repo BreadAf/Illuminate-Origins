@@ -1,0 +1,43 @@
+{
+    "name": "Voltage Increase",
+    "description": "You are able to reverse your charge, propelling yourself of the ground and into the air",
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:add_velocity",
+                "z": 2,
+                "space": "local"
+            },
+            {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:resistance",
+                    "duration": 140,
+                    "amplifier": 50,
+                    "show_icon": false,
+                    "show_particles": false
+                }
+            }
+        ]
+    },
+    "cooldown": 400,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/resource_bar.png",
+        "bar_index": 8
+    },
+  	"condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:sneaking",
+                "inverted": true
+            }
+        ]
+    },
+    "key": {
+        "key": "key.origins.ternary_active"
+    }
+}

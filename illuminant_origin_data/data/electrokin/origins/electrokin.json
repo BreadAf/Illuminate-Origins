@@ -1,0 +1,31 @@
+{
+    "powers": [
+        "electrokin:summon_lightning",
+        "electrokin:electric",
+        "electrokin:no_fall_damage",
+        "electrokin:storm_strong",
+        "electrokin:full_fire_immunity",
+        "electrokin:charcoal_consume",
+        "electrokin:coal_consume",
+        "electrokin:charcoal_consume_off",
+        "electrokin:coal_consume_off",
+        "electrokin:water_damage",
+        "electrokin:iron_damage",
+        "electrokin:immune_lightning",
+        "electrokin:particle_elec",
+        "electrokin:death_message_iron",
+        "electrokin:death_message_lightning",
+        "electrokin:death_message_water",
+        "electrokin:death_message_resource",
+        "electrokin:death_message_recov",
+        "electrokin:fasty",
+        "electrokin:weak_to_iron",
+        "electrokin:prevent_food"
+        
+    ],
+    "icon": "minecraft:yellow_dye",
+    "order": 2,
+    "impact": 3,
+    "name": "Electrokin",
+    "description": "The electrokin are a race of organisms made purely out of energy. They feed out of energy, and at the same time channel it a a defense mechanism."
+}

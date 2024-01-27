@@ -1,0 +1,12 @@
+{
+    "name":"Lighter Body",
+    "description":"Due to your lighter body, you have one less full heart.",
+    "type": "origins:attribute",
+    "modifier": 
+    {
+        "name": "Origin modifier",
+        "attribute": "minecraft:generic.max_health",
+        "operation": "addition",
+        "value": -2
+    }
+}

@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "order": 10,
+  "enabled": true,
+  "origins": [
+    "origins-classes:blacksmith",
+    "origins-classes:cleric",
+    "origins-classes:cook",
+    "origins-classes:farmer",
+    "origins-classes:merchant",
+    "origins-classes:rancher",
+    "origins-classes:miner",
+    "origins-classes:rogue",
+    "origins-classes:warrior",
+    "origins-classes:archer",
+    "origins-classes:beastmaster",
+    "origins-classes:lumberjack",
+    "origins-classes:explorer",
+    "origins-classes:nitwit",
+
+    "origins-classes:apothecary",
+    "origins-classes:berserker",
+    "origins-classes:bullet_sponge",
+    "origins-classes:enchanter",
+    "origins-classes:spearman"
+  ],
+  "name": "Second Class",
+  "allow_random": true,
+  "exclude_random": [
+    "origins-classes:nitwit"
+  ],
+  "allow_random_unchoosable": false
+}

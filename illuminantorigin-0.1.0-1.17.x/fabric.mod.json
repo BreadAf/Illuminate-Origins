@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "illuminantorigin",
+  "version": "0.1.0",
+  "name": "Illumanantorigin",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/illuminantorigin/icon128.png",
+  "environment": "*",
+  "depends": {
+    "fabricloader": ">=0.11.1",
+    "fabric": "*",
+    "minecraft": "1.17.x"
+  }
+}

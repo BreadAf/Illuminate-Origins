@@ -1,0 +1,14 @@
+{
+    "name":"Taste for Lightning",
+    "description":"You no longer take damage from lightning.",
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+        "type": "origins:name",
+        "name": "lightningBolt"
+    },
+    "modifier": {
+        "operation": "multiply_total",
+        "value": -1
+    },
+        "hidden": true
+}

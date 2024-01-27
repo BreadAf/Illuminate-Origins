@@ -1,0 +1,10 @@
+{
+  "name": "Spearman",
+  "description": "As a spearman, you are a trident expert and can deal more damage with your attacks.",
+  "powers": [
+    "origins-classes:more_trident_damage"
+  ],
+  "icon": "minecraft:trident",
+  "order": 10,
+  "impact": 0
+}

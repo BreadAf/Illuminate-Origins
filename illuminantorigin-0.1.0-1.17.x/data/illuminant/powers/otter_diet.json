@@ -1,0 +1,41 @@
+{
+    "name":"Otter Diet",
+    "description":"You can only eat meats and dried kelp.",
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:ingredient",
+              "ingredient": {
+                "tag": "origins:meat"
+              }
+            },
+            {
+              "type": "origins:meat"
+            },
+            {
+                "type": "origins:ingredient",
+                "ingredient": {
+                  "item": "minecraft:dried_kelp"
+                }
+              }
+          ],
+          "inverted": true
+        },
+        {
+          "type": "origins:food"
+        },
+        {
+          "type": "origins:ingredient",
+          "ingredient": {
+            "tag": "origins:ignore_diet"
+          },
+          "inverted": true
+        }
+      ]
+    }
+  }

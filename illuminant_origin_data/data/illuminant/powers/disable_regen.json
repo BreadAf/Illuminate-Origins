@@ -1,0 +1,5 @@
+{
+  "name": "No Regen",
+  "description": "You no longer passively regen health.",
+  "type": "origins:disable_regen"
+}

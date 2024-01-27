@@ -1,0 +1,11 @@
+{
+	"loading_priority": 10,
+	"name":"Bullet Sponge",
+	"description":"You are slightly more resistant to ranged attacks",
+	"powers": [
+		"origins-classes:bullet_proof_vest"
+	],
+	"icon": "minecraft:iron_chestplate",
+	"order": 7,
+	"impact": 0
+	}

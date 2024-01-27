@@ -1,0 +1,15 @@
+{
+	"powers": [
+		"illuminant:thermodynamically_fueled",
+		"illuminant:voltage_increase",
+		"illuminant:taste_for_lightning",
+		"illuminant:static_discharge",
+		"illuminant:electric_form"
+
+	],
+	"icon": "minecraft:yellow_dye",
+	"order": 0,
+	"impact": 2,
+	"name": "Electric Elemental",
+	"description": "Born from the sky and dropped"
+}

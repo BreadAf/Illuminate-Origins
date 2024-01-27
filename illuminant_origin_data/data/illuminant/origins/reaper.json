@@ -1,0 +1,14 @@
+{
+	"powers": [
+		"illuminant:life_absorb",
+		"illuminant:scythe_proficiency",
+		"illuminant:grim_reapers_sprint",
+		"illuminant:disable_regen",
+		"illuminant:weak_without_scythe"
+	],
+	"icon": "minecraft:netherite_hoe",
+	"order": 0,
+	"impact": 2,
+	"name": "Reaper",
+	"description": "Edgy"
+}

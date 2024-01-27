@@ -1,0 +1,72 @@
+{
+  "name": "Weak Without Scythe",
+  "description": "Only Scythe",
+  "type": "origins:modify_damage_dealt",
+  "modifier":
+  {
+    "operation": "addition",
+    "value": -2
+  },
+  "condition":
+  {
+    "type": "origins:equipped_item",
+    "equipment_slot": "mainhand",
+    "item_condition":
+    {
+      "type": "origins:or",
+      "conditions": 
+      [
+        {
+          "type": "origins:ingredient",
+          "ingredient":
+          {
+              "item": "minecraft:air"
+          }
+        },
+        {
+          "type": "origins:ingredient",
+          "ingredient":
+          {
+              "item": "minecraft:wooden_hoe"
+          }
+        },
+        {
+          "type": "origins:ingredient",
+          "ingredient":
+          {
+              "item": "minecraft:stone_hoe"
+          }
+        },
+        {
+          "type": "origins:ingredient",
+          "ingredient":
+          {
+              "item": "minecraft:iron_hoe"
+          }
+        },
+        {
+          "type": "origins:ingredient",
+          "ingredient":
+          {
+              "item": "minecraft:golden_hoe"
+          }
+        },
+        {
+          "type": "origins:ingredient",
+          "ingredient":
+          {
+              "item": "minecraft:diamond_hoe"
+          }
+        },
+        {
+          "type": "origins:ingredient",
+          "ingredient":
+          {
+              "item": "minecraft:netherite_hoe"
+          }
+        }
+      ]
+    },
+    "inverted":true
+  }
+}

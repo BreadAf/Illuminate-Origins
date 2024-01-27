@@ -1,0 +1,12 @@
+{
+	"loading_priority": 10,
+	"name":"Berserker",
+	"description":"Berserker become more enraged when they lose health.",
+	"powers": [
+		"origins-classes:enraged",
+		"origins-classes:adrenaline_rush"
+	],
+	"icon": "minecraft:stone_axe",
+	"order": 7,
+	"impact": 0
+	}

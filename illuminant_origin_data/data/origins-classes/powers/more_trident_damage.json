@@ -1,0 +1,63 @@
+{
+  "name": "Trident Proficiency",
+  "description": "You deal more damage when making attacks with a trident, or throwing a trident. You also attack faster with a trident.",
+  "type": "origins:multiple",
+  "trident_melee":
+  {
+    "type": "origins:modify_damage_dealt",
+    "modifier":
+    {
+      "operation": "addition",
+      "value": 1
+    },
+    "condition":
+    {
+      "type": "origins:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition":
+      {
+        "type": "origins:ingredient",
+        "ingredient":
+        {
+          "item": "minecraft:trident"
+        }
+      }
+    }
+  },
+  "trident_attack_speed":
+  {
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.attack_speed",
+        "operation": "addition",
+        "value": 0.5,
+        "name": "Increased trident attack speed"
+    },
+    "condition": 
+    {
+      "type": "origins:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition":
+      {
+        "type": "origins:ingredient",
+        "ingredient":
+        {
+          "item": "minecraft:trident"
+        }
+      }
+    }
+  },
+  "trident_thrown":
+  {
+    "type": "origins:modify_projectile_damage",
+    "modifier":
+    {
+      "operation": "addition",
+      "value": 1
+    },
+    "damage_condition": {
+      "type": "origins:projectile",
+      "projectile": "minecraft:trident"
+    }
+  }
+}

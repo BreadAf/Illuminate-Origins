@@ -1,0 +1,18 @@
+{
+	"powers": [
+		"origins:natural_armor",
+		"origins:no_shield",
+		"origins:carnivore",
+		"origins:nether_spawn",
+		"moborigins:pillager_aligned",
+		"moborigins:snow_trail",
+		"moborigins:lava_walk",
+		"origins:fire_immunity",
+		"illuminant:fireball"
+	],
+	"icon": "minecraft:dragon_head",
+	"order": 0,
+	"impact": 3,
+	"name": "Frost Footed Kobold",
+	"description": "dRagaon deez nUtz"
+}

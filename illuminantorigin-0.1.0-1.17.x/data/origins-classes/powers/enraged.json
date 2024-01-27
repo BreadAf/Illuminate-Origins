@@ -1,0 +1,75 @@
+{
+    "name":"Enraged",
+    "description":"Gain damage and attack speed for every quarter of health lost",
+    "type": "origins:multiple",
+    "three_quarter":
+    {
+        "type": "origins:conditioned_attribute",
+        "modifiers":
+        [
+            {
+                "attribute": "generic.attack_damage",
+                "operation": "addition",
+                "value": 1,
+                "name": "Increased sprinting speed"
+            },
+            {
+                "attribute": "minecraft:generic.attack_speed",
+                "operation": "addition",
+                "value": 0.25,
+                "name": "Increased sprinting speed"
+            }
+        ],
+        "condition": {
+            "type": "origins:relative_health",
+            "comparison": "<=",
+            "compare_to": 0.75
+        }
+    },
+    "one_half":
+    {
+        "type": "origins:conditioned_attribute",
+        "modifiers": [
+            {
+                "attribute": "generic.attack_damage",
+                "operation": "addition",
+                "value": 1,
+                "name": "Increased sprinting speed"
+            },
+            {
+                "attribute": "minecraft:generic.attack_speed",
+                "operation": "addition",
+                "value": 0.25,
+                "name": "Increased sprinting speed"
+            }
+        ],
+        "condition": {
+            "type": "origins:relative_health",
+            "comparison": "<=",
+            "compare_to": 0.5
+        }
+    },
+    "one_quarter":
+    {
+        "type": "origins:conditioned_attribute",
+        "modifiers": [
+            {
+                "attribute": "generic.attack_damage",
+                "operation": "addition",
+                "value": 1,
+                "name": "Increased sprinting speed"
+            },
+            {
+                "attribute": "minecraft:generic.attack_speed",
+                "operation": "addition",
+                "value": 0.25,
+                "name": "Increased sprinting speed"
+            }
+        ],
+        "condition": {
+            "type": "origins:relative_health",
+            "comparison": "<=",
+            "compare_to": 0.25
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+  "name":"Bullet Proof Vest",
+  "description":"Gain more armor and ranged damage resistance.",
+  "type": "origins:multiple",
+  "armor":
+  {
+    "type": "origins:attribute",
+    "modifier": {
+      "name": "Natural Armor health bonus",
+      "attribute": "minecraft:generic.armor",
+      "value": 2.0,
+      "operation": "addition"
+    }
+  },
+  "ranged_resist":
+  {
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:projectile",
+          "projectile": "minecraft:arrow"
+        },
+        {
+          "type": "origins:projectile",
+          "projectile": "minecraft:spectral_arrow"
+        },
+        {
+          "type": "origins:projectile",
+          "projectile": "minecraft:trident"
+        }
+      ]
+    },
+    "modifier": {
+        "name": "Weak to cursed items",
+        "operation": "addition",
+        "value": -2.0
+    }
+  }
+}

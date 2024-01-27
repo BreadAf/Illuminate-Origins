@@ -1,0 +1,48 @@
+{
+    "name":"Electric Form",
+    "description":"Due to your bioelectric form, you have 2 fewer full hearts and you cannot eat normal food.",
+    "type": "origins:multiple",
+    "frail_form":
+    {
+      "type": "origins:attribute",
+      "modifier": {
+          "attribute": "minecraft:generic.max_health",
+          "value": -4,
+          "operation": "addition"
+      }
+    },
+    "wet_electronics":
+    {
+      "type": "origins:modify_damage_taken",
+      "modifier": {
+        "name": "Weak to cursed items",
+        "operation": "multiply_total",
+        "value": 0.5
+      },
+      "condition":
+      {
+        "type": "origins:submerged_in",
+        "fluid": "minecraft:water"
+      }
+    },
+    "altered_digestion":
+    {
+      "type": "origins:prevent_item_use",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions":
+        [
+          {
+          "type": "origins:food"
+        },
+        {
+          "type": "origins:ingredient",
+          "ingredient": {
+            "tag": "origins:ignore_diet"
+          },
+          "inverted": true
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+	"loading_priority": 10,
+	"name":"Apothecary",
+	"description":"Apothecary's make much more potent potions than others.",
+	"powers": [
+		"origins-classes:longer_potions"
+	],
+	"icon": "minecraft:potion",
+	"order": 7,
+	"impact": 0
+	}

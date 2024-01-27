@@ -1,0 +1,16 @@
+{
+	"loading_priority": 1,
+    "powers": [
+        "moborigins:alpha_wolf",
+        "illuminant:night_damage",
+        "moborigins:wolf_pack",
+        "illuminant:wolf_jump",
+        "origins:carnivore",
+        "moborigins:wolf_body",
+        "illuminant:day_damage",
+        "origins:no_shield"
+    ],
+    "icon": "minecraft:bone",
+    "order": 2,
+    "impact": 1
+}

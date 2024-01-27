@@ -1,0 +1,40 @@
+{
+	"name": "Shrink",
+	"description": "you shrink",
+	"type": "origins:multiple",
+	"shrink": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "scale set 0.25 @s",
+			"permission_level": 4
+		},
+		"key": {
+			"key": "key.origins.secondary_active",
+			"continuous": false
+			},
+		"cooldown": 5,
+		"hud_render": {
+			"should_render": true,
+			"bar_index": 5
+		}
+	},
+	"range_boost": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"name": "Max health increase",
+			"attribute": "minecraft:generic.max_health",
+			"value": 4,
+			"operation": "addition"
+		},
+		"key": {
+			"key": "key.origins.secondary_active",
+			"continuous": false
+			},
+		"cooldown": 5,
+		"hud_render": {
+			"should_render": true,
+			"bar_index": 5
+		}
+	}
+}

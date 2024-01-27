@@ -1,0 +1,14 @@
+{
+  "name": "Grim Reaper's Sprint",
+  "description": "Go fast juice",
+  "type": "origins:self_action_on_kill",
+  "entity_action": {
+    "type": "origins:apply_effect",
+    "effect": {
+      "effect": "minecraft:speed",
+      "duration": 400,
+      "amplifier": 0
+    }
+  },
+  "cooldown": 0
+}

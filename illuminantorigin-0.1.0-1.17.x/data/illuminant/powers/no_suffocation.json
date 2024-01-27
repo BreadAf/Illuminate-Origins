@@ -1,0 +1,10 @@
+{
+  "name": "Bony Lungs",
+  "description": "You no longer require Oxygen",
+  "type": "origins:action_over_time",
+  "entity_action": {
+    "type": "origins:gain_air",
+    "value": 200
+  },
+  "interval": 20
+}

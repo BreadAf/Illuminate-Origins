@@ -1,0 +1,45 @@
+{
+    "type": "origins:action_on_item_use",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "gamerule showDeathMessages false",
+                "permission_level": 4
+              },
+            {
+        "type": "origins:damage",
+            "amount": 6,
+            "source": {
+                "name": "generic",
+                "bypasses_armor": true,
+                "unblockable": true
+            }
+            },
+            {
+                "type": "origins:delay",
+          "ticks": 1,
+          "action": {
+            "type": "origins:execute_command",
+            "command": "gamerule showDeathMessages true",
+            "permission_level": 4
+          }
+            },
+            {
+                "type": "origins:change_resource",
+                "resource": "eefsorigins:death_message_resource",
+                "change": 2
+            }
+        ]
+            
+    },
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:potion"
+        }
+    },
+    "name": "Short Circuit",
+    "description": "While water can in fact touch you normally on the outside, it can damage you once consumed. You'll take damage from drinking anything with water in it, as water is an excellent conductor and can basically cause a short circuit."
+}

@@ -1,0 +1,12 @@
+{
+	"powers": [
+		"illuminant:stormbringer",
+		"illuminant:blessing_of_atlantis",
+		"illuminant:curse_of_atlantis"
+	],
+	"icon": "minecraft:trident",
+	"order": 0,
+	"impact": 2,
+	"name": "Atlantean",
+	"description": "Atlanteans have lived deep below the sea allowing them to master the Trident."
+}

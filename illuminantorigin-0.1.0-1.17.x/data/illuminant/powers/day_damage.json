@@ -1,0 +1,45 @@
+{
+    "name": "Bad Sun",
+    "description": "You deal less damage during the day.",
+    "type": "origins:multiple",
+    "melee":
+    {
+        "type": "origins:modify_damage_dealt",
+        "modifier":
+        {
+            "operation": "addition",
+            "value": -3
+        },
+        "condition":
+        {
+            "type": "origins:daytime"
+        }
+    },
+    "ranged":
+    {
+        "type": "origins:modify_projectile_damage",
+        "modifier":
+        {
+            "operation": "addition",
+            "value": -3
+        },
+        "condition":
+        {
+            "type": "origins:daytime"
+        },
+        "damage_condition": {
+            "type": "origins:or",
+            "conditions": 
+            [
+                {
+                "type": "origins:projectile",
+                "projectile": "minecraft:arrow"
+                },
+                {    
+                "type": "origins:projectile",
+                "projectile": "minecraft:spectral_arrow"
+                }
+            ]
+        }
+    }
+}

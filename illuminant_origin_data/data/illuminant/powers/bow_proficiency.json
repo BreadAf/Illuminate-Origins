@@ -1,0 +1,24 @@
+{
+  "name": "Bow Proficiency",
+  "description": "You deal more damage with bows.",
+  "type": "origins:modify_projectile_damage",
+  "modifier":
+  {
+      "operation": "addition",
+      "value": 2
+  },
+  "damage_condition": {
+      "type": "origins:or",
+      "conditions": 
+      [
+          {
+          "type": "origins:projectile",
+          "projectile": "minecraft:arrow"
+          },
+          {    
+          "type": "origins:projectile",
+          "projectile": "minecraft:spectral_arrow"
+          }
+      ]
+  }
+}

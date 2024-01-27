@@ -1,0 +1,26 @@
+{
+  "type": "origins:self_action_when_hit",
+  "entity_action": {
+    "type": "origins:chance",
+    "action": {
+      "type": "origins:apply_effect",
+      "effects": [
+        {
+          "effect": "minecraft:speed",
+          "amplifier": 2,
+          "duration": 160,
+          "show_icon": false,
+          "show_particles": false
+        }
+      ]
+    },
+    "chance": 1
+  },
+  "damage_condition": {
+    "type": "origins:amount",
+    "comparison": ">=",
+    "compare_to": 2
+  },
+  "cooldown": 20,
+  "hidden": true
+}

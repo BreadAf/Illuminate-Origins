@@ -1,0 +1,10 @@
+{
+  "name": "Life Absorb",
+  "description": "Heal on Kill",
+  "type": "origins:self_action_on_kill",
+  "entity_action": {
+      "type": "origins:heal",
+      "amount": 4.0
+  },
+  "cooldown": 0
+}

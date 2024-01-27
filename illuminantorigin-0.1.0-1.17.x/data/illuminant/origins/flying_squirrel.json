@@ -1,0 +1,14 @@
+{
+	"powers": [
+		"origins:elytra",
+		"illuminant:no_collision_damage",
+		"origins:light_armor",
+		"illuminant:less_health",
+		"origins:more_exhaustion"
+	],
+	"icon":  "minecraft:elytra",
+	"order": 3,
+	"impact": 1,
+	"name": "Flying Squirrel",
+	"description": "Flying Squirrels are known for their winglike membrane, gifting them the ability of flight."
+}

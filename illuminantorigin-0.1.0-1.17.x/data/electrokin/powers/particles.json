@@ -1,0 +1,9 @@
+{
+	"type": "origins:action_over_time",
+	"entity_action": {
+		"type": "origins:execute_command",
+		"command": "particle minecraft:dolphin ~ ~ ~ 0.7 1 0.7 0.15 50"
+	},
+	"interval": 3,
+	"hidden": true
+}

@@ -1,0 +1,15 @@
+{
+	"powers": [
+		"moborigins:flower_power",
+		"moborigins:queen_bee",
+		"moborigins:bee_wings",
+		"extraorigins:bite_sized",
+		"origins:climbing",
+		"extraorigins:jockey"
+	],
+	"icon": "minecraft:honey_bottle",
+	"order": 0,
+	"impact": 3,
+	"name": "Queen Bee",
+	"description": "You the thicckest bee of all (Damn!)."
+}

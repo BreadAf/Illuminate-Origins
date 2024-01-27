@@ -1,0 +1,41 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "gamerule showDeathMessages false",
+                "permission_level": 4
+              },
+            {
+        "type": "origins:execute_command",
+        "command": "function lightning:start_ray",
+        "permission_level": 4
+        },
+        {
+            "type": "origins:delay",
+      "ticks": 1,
+      "action": {
+        "type": "origins:execute_command",
+        "command": "gamerule showDeathMessages true",
+        "permission_level": 4
+      }
+        },
+        {
+            "type": "origins:change_resource",
+            "resource": "eefsorigins:death_message_resource",
+            "change": 1
+        }
+    ]
+    },
+    "cooldown": 200,
+    "hud_render": {
+        "should_render": true, 
+        "sprite_location": "origins:textures/gui/resource_bar.png",
+        "bar_index": 2
+    },
+    "key": "primary",
+    "name": "Electrokinesis",
+    "description": "[Primary key] You are able to summon a lightning strike every 10 seconds to where you're looking."
+}

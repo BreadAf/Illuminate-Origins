@@ -1,0 +1,16 @@
+{
+	"powers": [
+		"illuminant:bow_proficiency",
+		"illuminant:fully_charged",
+		"illuminant:no_suffocation",
+		"illuminant:no_hunger",
+		"illuminant:burn_in_daylight",
+		"origins:no_shield",
+		"illuminant:enemy_of_villagers"
+	],
+	"icon": "minecraft:skeleton_skull",
+	"order": 0,
+	"impact": 2,
+	"name": "Half-Skull",
+	"description": "It's half a skeleton."
+}

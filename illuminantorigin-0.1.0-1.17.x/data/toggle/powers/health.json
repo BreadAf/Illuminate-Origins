@@ -1,0 +1,12 @@
+{
+  "type": "origins:attribute",
+  "modifier": {
+    "name": "Health Reduction",
+    "attribute": "minecraft:generic.max_health",
+    "value": -6.0,
+    "operation": "addition"
+  },
+	"name": "Fragile",
+	"description": "Your body is very fragile.",
+	"hidden": "false"
+}

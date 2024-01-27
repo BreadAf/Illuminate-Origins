@@ -1,0 +1,8 @@
+{
+  "hidden": true,
+  "type": "origins:modify_crafting",
+  "recipe": "minecraft:crafting_special_repairitem",
+  "result": {
+      "item": "minecraft:trident"
+  }
+}

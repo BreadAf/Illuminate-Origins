@@ -1,0 +1,19 @@
+{
+    "name": "Springy Form",
+    "description": "Your body is entirely resistant to velocity based damage.",
+    "type": "origins:invulnerability",
+    "damage_condition": {
+        "type": "origins:or",
+        "conditions": [
+          {
+            "type": "origins:name",
+            "name": "fall"
+          },
+          {
+            "type": "origins:name",
+            "name": "flyIntoWall"
+          }
+        ]
+    }
+}
+  

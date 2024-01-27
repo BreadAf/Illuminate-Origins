@@ -1,0 +1,465 @@
+{
+  "name": "Thermodynamically Fueled",
+  "description": "You now can consume charcoal, coal, blaze rods, dried kelp blocks, blocks of coal, and lava buckets to refill your energy bar.",
+  "type": "origins:multiple",
+
+  "charcoal":
+  {
+    "type": "origins:active_self",
+    "cooldown": 0,
+    "key": {
+      "key": "key.use",
+      "continuous": false
+    },
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "permission_level": 4,
+          "command": "clear @s charcoal 1"
+        },
+        {
+          "type": "origins:feed",
+          "food": 1,
+          "saturation": 0.6
+        },
+        {
+          "type": "origins:play_sound",
+          "sound": "minecraft:entity.elder_guardian.flop"
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:food_level",
+          "comparison": "<",
+          "compare_to": 20
+        },
+        {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:equipped_item",
+              "inverted": false,
+              "equipment_slot": "mainhand",
+              "item_condition": {
+                "type": "origins:ingredient",
+                "inverted": false,
+                "ingredient": {
+                  "item": "minecraft:charcoal"
+                }
+              }
+            },
+            {
+              "type": "origins:equipped_item",
+              "inverted": false,
+              "equipment_slot": "offhand",
+              "item_condition": {
+                "type": "origins:ingredient",
+                "inverted": false,
+                "ingredient": {
+                  "item": "minecraft:charcoal"
+                }
+              }
+            }
+          ]
+        }
+      ]
+      
+    },
+    "hud_render": {
+      "should_render": false,
+      "sprite_location": "origins:textures/gui/resource_bar.png",
+      "bar_index": 10
+    }
+  },
+
+  "coal":
+  {
+    "type": "origins:active_self",
+    "cooldown": 0,
+    "key": {
+      "key": "key.use",
+      "continuous": false
+    },
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "permission_level": 4,
+          "command": "clear @s coal 1"
+        },
+        {
+          "type": "origins:feed",
+          "food": 1,
+          "saturation": 0.6
+        },
+        {
+          "type": "origins:play_sound",
+          "sound": "minecraft:entity.elder_guardian.flop"
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:food_level",
+          "comparison": "<",
+          "compare_to": 20
+        },
+        {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:equipped_item",
+              "inverted": false,
+              "equipment_slot": "mainhand",
+              "item_condition": {
+                "type": "origins:ingredient",
+                "inverted": false,
+                "ingredient": {
+                  "item": "minecraft:coal"
+                }
+              }
+            },
+            {
+              "type": "origins:equipped_item",
+              "inverted": false,
+              "equipment_slot": "offhand",
+              "item_condition": {
+                "type": "origins:ingredient",
+                "inverted": false,
+                "ingredient": {
+                  "item": "minecraft:coal"
+                }
+              }
+            }
+          ]
+        }
+      ]
+      
+    },
+    "hud_render": {
+      "should_render": false,
+      "sprite_location": "origins:textures/gui/resource_bar.png",
+      "bar_index": 10
+    }
+  },
+
+  "coal_block":
+  {
+    "type": "origins:active_self",
+    "cooldown": 0,
+    "key": {
+      "key": "key.use",
+      "continuous": false
+    },
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "permission_level": 4,
+          "command": "clear @s coal_block 1"
+        },
+        {
+          "type": "origins:feed",
+          "food": 10,
+          "saturation": 0.6
+        },
+        {
+          "type": "origins:play_sound",
+          "sound": "minecraft:entity.elder_guardian.flop"
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:food_level",
+          "comparison": "<",
+          "compare_to": 20
+        },
+        {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:equipped_item",
+              "inverted": false,
+              "equipment_slot": "mainhand",
+              "item_condition": {
+                "type": "origins:ingredient",
+                "inverted": false,
+                "ingredient": {
+                  "item": "minecraft:coal_block"
+                }
+              }
+            },
+            {
+              "type": "origins:equipped_item",
+              "inverted": false,
+              "equipment_slot": "offhand",
+              "item_condition": {
+                "type": "origins:ingredient",
+                "inverted": false,
+                "ingredient": {
+                  "item": "minecraft:coal_block"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "hud_render": {
+      "should_render": false,
+      "sprite_location": "origins:textures/gui/resource_bar.png",
+      "bar_index": 10
+    }
+  },
+
+  "blaze_rod":
+  {
+    "type": "origins:active_self",
+    "cooldown": 0,
+    "key": {
+      "key": "key.use",
+      "continuous": false
+    },
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "permission_level": 4,
+          "command": "clear @s blaze_rod 1"
+        },
+        {
+          "type": "origins:feed",
+          "food": 2,
+          "saturation": 0.5
+        },
+        {
+          "type": "origins:play_sound",
+          "sound": "minecraft:entity.elder_guardian.flop"
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:food_level",
+          "comparison": "<",
+          "compare_to": 20
+        },
+        {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:equipped_item",
+              "inverted": false,
+              "equipment_slot": "mainhand",
+              "item_condition": {
+                "type": "origins:ingredient",
+                "inverted": false,
+                "ingredient": {
+                  "item": "minecraft:blaze_rod"
+                }
+              }
+            },
+            {
+              "type": "origins:equipped_item",
+              "inverted": false,
+              "equipment_slot": "offhand",
+              "item_condition": {
+                "type": "origins:ingredient",
+                "inverted": false,
+                "ingredient": {
+                  "item": "minecraft:blaze_rod"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "hud_render": {
+      "should_render": false,
+      "sprite_location": "origins:textures/gui/resource_bar.png",
+      "bar_index": 10
+    }
+  },
+
+  "dried_kelp_block":
+  {
+    "type": "origins:active_self",
+    "cooldown": 0,
+    "key": {
+      "key": "key.use",
+      "continuous": false
+    },
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "permission_level": 4,
+          "command": "clear @s dried_kelp_block 1"
+        },
+        {
+          "type": "origins:feed",
+          "food": 3,
+          "saturation": 0.4
+        },
+        {
+          "type": "origins:play_sound",
+          "sound": "minecraft:entity.elder_guardian.flop"
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:food_level",
+          "comparison": "<",
+          "compare_to": 20
+        },
+        {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:equipped_item",
+              "inverted": false,
+              "equipment_slot": "mainhand",
+              "item_condition": {
+                "type": "origins:ingredient",
+                "inverted": false,
+                "ingredient": {
+                  "item": "minecraft:dried_kelp_block"
+                }
+              }
+            },
+            {
+              "type": "origins:equipped_item",
+              "inverted": false,
+              "equipment_slot": "offhand",
+              "item_condition": {
+                "type": "origins:ingredient",
+                "inverted": false,
+                "ingredient": {
+                  "item": "minecraft:dried_kelp_block"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "hud_render": {
+      "should_render": false,
+      "sprite_location": "origins:textures/gui/resource_bar.png",
+      "bar_index": 10
+    }
+  },
+
+  "lava_bucket":
+  {
+    "type": "origins:active_self",
+    "cooldown": 0,
+    "key": {
+      "key": "key.use",
+      "continuous": false
+    },
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "permission_level": 4,
+          "command": "clear @s lava_bucket 1"
+        },
+        {
+          "type": "origins:damage",
+          "amount": 4,
+          "source": {
+            "name": "onFire",
+            "fire": true,
+            "bypasses_armor": true
+          }
+        },
+        {
+          "type": "origins:set_on_fire",
+          "duration": 5
+        },
+        {
+          "type": "origins:execute_command",
+          "permission_level": 4,
+          "command": "effect give @s saturation 20 0"
+        },
+        {
+          "type": "origins:play_sound",
+          "sound": "minecraft:entity.elder_guardian.flop"
+        },
+        {
+          "type": "origins:give",
+          "stack": {
+            "item": "minecraft:bucket",
+            "amount": 1
+          }
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:food_level",
+          "comparison": "<",
+          "compare_to": 20
+        },
+        {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:equipped_item",
+              "inverted": false,
+              "equipment_slot": "mainhand",
+              "item_condition": {
+                "type": "origins:ingredient",
+                "inverted": false,
+                "ingredient": {
+                  "item": "minecraft:lava_bucket"
+                }
+              }
+            },
+            {
+              "type": "origins:equipped_item",
+              "inverted": false,
+              "equipment_slot": "offhand",
+              "item_condition": {
+                "type": "origins:ingredient",
+                "inverted": false,
+                "ingredient": {
+                  "item": "minecraft:lava_bucket"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "hud_render": {
+      "should_render": false,
+      "sprite_location": "origins:textures/gui/resource_bar.png",
+      "bar_index": 10
+    }
+  }
+}

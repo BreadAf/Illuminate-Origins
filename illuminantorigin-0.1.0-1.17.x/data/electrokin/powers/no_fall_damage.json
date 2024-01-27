@@ -1,0 +1,9 @@
+{
+    "type": "origins:invulnerability",
+    "damage_condition": {
+        "type": "origins:name",
+        "name": "fall"
+    },
+      "name": "Energy",
+      "description": "You're quite faster than the average player and you take no fall damage due to being a merely energy-based organism."
+}

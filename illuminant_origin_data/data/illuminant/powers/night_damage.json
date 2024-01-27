@@ -1,0 +1,47 @@
+{
+    "name": "Luna Lupis",
+    "description": "You deal more damage at night.",
+    "type": "origins:multiple",
+    "melee":
+    {
+        "type": "origins:modify_damage_dealt",
+        "modifier":
+        {
+            "operation": "addition",
+            "value": 3
+        },
+        "condition":
+        {
+            "type": "origins:daytime",
+            "inverted": true
+        }
+    },
+    "ranged":
+    {
+        "type": "origins:modify_projectile_damage",
+        "modifier":
+        {
+            "operation": "addition",
+            "value": 3
+        },
+        "condition":
+        {
+            "type": "origins:daytime",
+            "inverted": true
+        },
+        "damage_condition": {
+            "type": "origins:or",
+            "conditions": 
+            [
+                {
+                "type": "origins:projectile",
+                "projectile": "minecraft:arrow"
+                },
+                {    
+                "type": "origins:projectile",
+                "projectile": "minecraft:spectral_arrow"
+                }
+            ]
+        }
+    }
+  }

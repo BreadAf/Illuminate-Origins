@@ -1,0 +1,16 @@
+{
+	"powers": [
+		"toggle:toggle_grow",
+		"toggle:toggle_normal",
+		"toggle:toggle_shrink",
+		"origins:climbing",
+		"toggle:jump",
+		"toggle:climbing",
+		"toggle:health"
+	],
+	"icon": "minecraft:brown_mushroom",
+	"order": 0,
+	"impact": 2,
+	"name": "Toggle",
+	"description": "Toggle Small and Big"
+}

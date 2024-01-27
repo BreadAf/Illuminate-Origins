@@ -1,0 +1,64 @@
+{
+  "name":"More Pickaxe Durability",
+  "description":"Decreases the amount of durability lost when mining.",
+  "type": "origins:action_on_block_break",
+  "entity_action": {
+    "type": "origins:chance",
+    "action": {
+      "type": "origins:equipped_item_action",
+      "equipment_slot": "mainhand",
+      "action": {
+        "type": "origins:damage",
+        "amount": -1,
+        "ignore_unbreaking": false
+      }
+    },
+    "chance": 0.1
+  },
+  "only_when_harvested": false,
+  "condition": {
+    "type": "origins:equipped_item",
+    "equipment_slot": "mainhand",
+    "item_condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:ingredient",
+          "ingredient": {
+              "item": "minecraft:wooden_pickaxe"
+          }
+        },
+        {
+          "type": "origins:ingredient",
+          "ingredient": {
+              "item": "minecraft:stone_pickaxe"
+          }
+        },
+        {
+          "type": "origins:ingredient",
+          "ingredient": {
+              "item": "minecraft:iron_pickaxe"
+          }
+        },
+        {
+          "type": "origins:ingredient",
+          "ingredient": {
+              "item": "minecraft:golden_pickaxe"
+          }
+        },
+        {
+          "type": "origins:ingredient",
+          "ingredient": {
+              "item": "minecraft:diamond_pickaxe"
+          }
+        },
+        {   
+          "type": "origins:ingredient",
+          "ingredient": {
+              "item": "minecraft:netherite_pickaxe"
+          }
+        }
+      ]
+    }
+  }
+}

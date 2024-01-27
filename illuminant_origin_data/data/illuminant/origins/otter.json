@@ -1,0 +1,14 @@
+{
+	"powers": [
+        "illuminant:otter_sized",
+		"origins:like_water",
+        "illuminant:otter_diet",
+        "origins:climbing",
+        "extraorigins:jockey"
+	],
+	"icon": "minecraft:nautilus_shell",
+	"order": 0,
+	"impact": 2,
+	"name": "Otter",
+	"description": "Otters are amphibious mammals, thriving well in water and on land."
+}

@@ -1,0 +1,10 @@
+{
+  "name":"Enchanter",
+  "description":"You are long practiced in mystic arts, increasing your enchanting skills",
+  "powers": [
+    "origins-classes:better_enchanting"
+  ],
+  "icon": "minecraft:enchanting_table",
+  "order": 7,
+  "impact": 0
+}

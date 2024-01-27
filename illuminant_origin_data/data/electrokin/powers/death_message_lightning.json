@@ -1,0 +1,57 @@
+{
+  "type": "origins:action_over_time",
+  "entity_action": {
+      "type": "origins:and",
+      "actions": [
+          {
+        "type": "origins:delay",
+        "ticks": 1,
+        "action": {
+          "type": "origins:choice",
+          "actions": [
+            {
+              "element": {
+                "type": "origins:execute_command",
+                "command": "tellraw @a [{\"selector\":\"@s\",\"italic\":false},{\"text\":\" wore themselves out\"}]",
+                "permission_level": 4
+              },
+              "weight": 10
+            },
+            {
+              "element": {
+                "type": "origins:execute_command",
+                "command": "tellraw @a [{\"selector\":\"@s\",\"italic\":false},{\"text\":\" used too much energy\"}]",
+                "permission_level": 4
+              },
+              "weight": 10
+            }
+          ]
+        }
+      },
+      {
+        "type": "origins:change_resource",
+            "resource": "eefsorigins:death_message_resource",
+            "change": -1
+        }
+      ]
+      
+  },
+  "interval": 1,
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+    "type": "origins:resource",
+    "resource": "eefsorigins:death_message_resource",
+    "comparison": "==",
+    "compare_to": 1
+      },
+      {
+        "type": "origins:health",
+        "comparison": "<=",
+        "compare_to": 0
+      }
+    ]
+  },
+  "hidden": true
+}

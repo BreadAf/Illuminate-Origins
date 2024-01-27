@@ -1,0 +1,65 @@
+{
+  "replace": false,
+  "order": 10,
+  "enabled": true,
+  "origins": [
+    "origins:arachnid",
+    "origins:avian",
+    "origins:blazeborn",
+    "origins:elytrian",
+    "origins:enderian",
+    "origins:feline",
+    "origins:human",
+    "origins:merling",
+    "origins:phantom",
+    "origins:shulk",
+      
+    "extraorigins:floran",
+    "extraorigins:inchling",
+    "extraorigins:piglin",
+
+    "genesis:golem",
+    "genesis:ghastling",
+    "genesis:silverfish",
+    "genesis:arcanite",
+    "genesis:dragonkin",
+
+    "foxboi_two:foxboi_two",
+
+    "moborigins:snowgolem",
+    "moborigins:witch",
+    "moborigins:strider",
+    "moborigins:evoker",
+    "moborigins:guardian",
+    "moborigins:slime",
+    "moborigins:wolf",
+    "moborigins:elder_guardian",
+    "moborigins:bee",
+    "moborigins:fox",
+    "moborigins:drowned",
+
+    "illuminant:atlantean",
+    "illuminant:electric_elemental",
+    "illuminant:queen_bee",
+    "illuminant:frost_footed_kobold",
+    "illuminant:reaper",
+    "illuminant:half_skull",
+    "illuminant:otter",
+    "illuminant:flying_squirrel",
+
+    "salamander:salamander",
+    "deepling:deepling",
+    "avian_subspecies:ra",
+    "aerum:aerum",
+
+	  "toggle:toggle",
+		"star:starborne",
+    "electrokin:electrokin"
+  ],
+  "name": "Second Origin",
+  "allow_random": true,
+  "exclude_random": [
+    "origins:human"
+  ],
+  "allow_random_unchoosable": false
+}

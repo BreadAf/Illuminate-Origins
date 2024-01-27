@@ -1,0 +1,83 @@
+{
+  "name": "Curse of Atlantis",
+  "description": "When not in contact with water, you take more damage as well as dealing less damage with non-Trident weapons.",
+  "type": "origins:multiple",
+  "damage_taken": 
+  {
+    "type": "origins:modify_damage_taken",
+    "modifier":
+    {
+      "operation": "addition",
+      "value": 2
+    },
+    "condition":
+    {
+      "type": "origins:and",
+      "conditions":
+      [
+        {
+          "type": "origins:fluid_height",
+          "fluid": "minecraft:water",
+          "comparison": "==",
+          "compare_to": 0
+        },
+        { 
+          "type": "origins:in_rain",
+          "inverted": true
+        }
+      ]
+    }
+  },
+  "damage_dealt_melee":
+  {
+    "type": "origins:modify_damage_dealt",
+    "modifier":
+    {
+      "operation": "addition",
+      "value": -3
+    },
+    "condition":
+    {
+      "type": "origins:and",
+      "conditions":
+      [
+        {
+          "type": "origins:fluid_height",
+          "fluid": "minecraft:water",
+          "comparison": "==",
+          "compare_to": 0
+        },
+        { 
+          "type": "origins:in_rain",
+          "inverted": true
+        }
+      ]
+    }
+  },
+  "damage_dealt_ranged":
+  {
+    "type": "origins:modify_projectile_damage",
+    "modifier":
+    {
+      "operation": "addition",
+      "value": -3
+    },
+    "condition":
+    {
+      "type": "origins:and",
+      "conditions":
+      [
+        {
+          "type": "origins:fluid_height",
+          "fluid": "minecraft:water",
+          "comparison": "==",
+          "compare_to": 0
+        },
+        { 
+          "type": "origins:in_rain",
+          "inverted": true
+        }
+      ]
+    }
+  }
+}

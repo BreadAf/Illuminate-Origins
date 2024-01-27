@@ -1,0 +1,36 @@
+{
+  "name": "Stormbringer",
+  "description": "You can use the Channeling ability, but you have to be underwater or in the rain.",
+  "type": "origins:target_action_on_hit",
+  "entity_action":
+  {
+    "type": "origins:spawn_entity",
+    "entity_type": "minecraft:lightning_bolt"
+  },
+  "damage_condition":
+  {
+    "type": "origins:projectile",
+    "projectile": "minecraft:trident"
+  },
+  "cooldown": 0,
+  "hud_render":
+  {
+    "should_render": true, 
+    "sprite_location": "origins:textures/gui/resource_bar.png",
+    "bar_index": 2
+  },
+  "condition":
+  {
+    "type": "origins:or",
+    "conditions":
+    [
+      {
+        "type": "origins:submerged_in",
+        "fluid": "minecraft:water"
+      },
+      { 
+        "type": "origins:in_rain" 
+      }
+    ]
+  }
+}

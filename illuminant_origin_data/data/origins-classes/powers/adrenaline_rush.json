@@ -1,0 +1,56 @@
+{
+    "name":"Adrenaline Rush",
+    "description":"Increase max health, damage and attack speed for every quarter of health lost",
+    "type": "origins:multiple",
+    "increased_health": {
+    "type": "origins:active_self",
+    "entity_action":
+    {
+      "type": "origins:apply_effect",
+      "effect": {
+        "effect": "minecraft:health_boost",
+        "duration": 350,
+        "amplifier": 0
+      }
+    },
+    "cooldown": 3600,
+    "hud_render": {
+      "should_render": true,
+      "sprite_location": "origins:textures/gui/resource_bar.png",
+      "bar_index": 8
+    },
+    "key": {
+        "key": "key.origins.secondary_active"
+    }
+  },
+  "more_damage": 
+  {
+    "type": "origins:conditioned_attribute",
+    "modifiers":
+    [
+      {
+        "attribute": "generic.attack_damage",
+        "operation": "addition",
+        "value": 1,
+        "name": "Increased sprinting speed"
+      },
+      {
+        "attribute": "minecraft:generic.attack_speed",
+        "operation": "addition",
+        "value": 0.5,
+        "name": "Increased sprinting speed"
+      },
+      {
+        "attribute": "minecraft:generic.movement_speed",
+        "operation": "addition",
+        "value": 0.02,
+        "name": "Increased sprinting speed"
+      }
+    ],
+    "condition": 
+    {
+      "type": "origins:status_effect",
+      "effect": "minecraft:health_boost"
+    }
+  }
+}

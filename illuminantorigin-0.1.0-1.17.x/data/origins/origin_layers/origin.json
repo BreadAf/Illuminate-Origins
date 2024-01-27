@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "origins": [
+    "illuminant:atlantean",
+    "illuminant:electric_elemental",
+    "illuminant:queen_bee",
+    "illuminant:frost_footed_kobold",
+    "illuminant:reaper",
+    "illuminant:half_skull",
+    "illuminant:otter",
+    "illuminant:flying_squirrel",
+    "salamander:salamander",
+    "deepling:deepling",
+    "avian_subspecies:ra",
+    "aerum:aerum",
+	  "toggle:toggle",
+		"star:starborne",
+    "electrokin:electrokin"
+  ]
+}
